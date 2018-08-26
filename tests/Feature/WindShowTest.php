@@ -42,7 +42,7 @@ class WindShowTest extends TestCase
     public function can_show_wind_direction_and_speed()
     {
         $response = $this->json('GET', route('api.v1.wind.show', ['zipCode' => 89101]))
-                ->assertStatus(200);
+            ->assertStatus(200);
 
         $this->assertEquals(21.96, data_get($response->json(), 'windSpeed'));
         $this->assertEquals('W', data_get($response->json(), 'windDirection'));

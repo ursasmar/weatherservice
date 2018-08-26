@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(WeatherDataContract::class, function() {
+        $this->app->singleton(WeatherDataContract::class, function () {
             $base = new OpenWeatherMapService();
             $cache = new OpenWeatherMapCacheService($base);
 

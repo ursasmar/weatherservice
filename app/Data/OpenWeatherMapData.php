@@ -5,39 +5,25 @@ namespace App\Data;
 
 class OpenWeatherMapData implements WeatherDataInterface
 {
-    /** 
-     * @Groups({"complete", "wind"}) 
-     */
+    /** @var float */
     public $windSpeed;
 
-    /** 
-     * @Groups({"complete", "wind"}) 
-     */
+    /** @var string */
     public $windDirection;
 
-    /** 
-     * @Groups({"complete", "main"}) 
-     */
+    /** @var float */
     public $temp;
 
-    /** 
-     * @Groups({"complete", "main"}) 
-     */
+    /** @var float */
     public $humidity;
 
-    /** 
-     * @Groups({"complete", "main"}) 
-     */
+    /** @var float */
     public $pressure;
 
-    /** 
-     * @Groups({"complete", "main"}) 
-     */
+    /** @var float */
     public $tempMin;
 
-    /** 
-     * @Groups({"complete", "main"}) 
-     */
+    /** @var float */
     public $tempMax;
 
     /**
@@ -66,6 +52,6 @@ class OpenWeatherMapData implements WeatherDataInterface
     {
         $cardinals = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW', 'N'];
 
-        return $cardinals[ (int)round(($degrees % 369) / 45) ];
+        return $cardinals[(int)round(($degrees % 369) / 45)];
     }
 }

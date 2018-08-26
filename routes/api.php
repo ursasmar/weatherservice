@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::namespace('API\V1')->prefix('v1')->group(function() {
+Route::namespace('API\V1')->prefix('v1')->group(function () {
     Route::get('/wind/{zipCode}', 'WindController@show')->name('api.v1.wind.show');
 });
 

@@ -43,11 +43,12 @@ class WindController extends Controller
         $response = $this->serializer->normalize(
             $weatherData,
             'json',
-            ['attributes' =>
-                [
-                    'windSpeed',
-                    'windDirection'
-                ]
+            [
+                'attributes' =>
+                    [
+                        'windSpeed',
+                        'windDirection'
+                    ]
             ]
         );
 
