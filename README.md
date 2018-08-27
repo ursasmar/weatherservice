@@ -13,5 +13,5 @@ How To Run
     ```
 4.    The wind resource should now be accessible by running a curl command:
     ```
-    $ curl -x http://localhost:8000/api/v1/wind/89101
+    $ curl http://localhost:8000/api/v1/wind/89101
     ```
