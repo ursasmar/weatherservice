@@ -15,3 +15,5 @@ How To Run
     ```
     $ curl http://localhost:8000/api/v1/wind/89101
     ```
+    
+To clear the cache: ```$ php artisan weather:clear {zipCode}```
