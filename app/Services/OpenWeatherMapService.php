@@ -12,7 +12,6 @@ use Symfony\Component\Serializer\Serializer;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 
-
 class OpenWeatherMapService implements WeatherDataContract
 {
     /** @var string */
@@ -66,7 +65,6 @@ class OpenWeatherMapService implements WeatherDataContract
             }
 
             return (string)$response->getBody();
-
         } catch (RequestException $e) {
             throw new OpenWeatherMapException(
                 'Open Weather Map caused an exception',

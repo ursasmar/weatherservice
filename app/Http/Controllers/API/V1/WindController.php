@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\API\V1;
 
-
 use App\Contracts\WeatherDataContract;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ShowWindRequest;

@@ -39,7 +39,7 @@ class WindShowTest extends TestCase
     /**
      * @test
      */
-    public function can_show_wind_direction_and_speed()
+    public function canShowWindDirectionAndSpeed()
     {
         $response = $this->json('GET', route('api.v1.wind.show', ['zipCode' => 89101]))
             ->assertStatus(200);
@@ -51,7 +51,7 @@ class WindShowTest extends TestCase
     /**
      * @test
      */
-    public function fails_on_invalid_zip_code()
+    public function failsOnInvalidZipCode()
     {
         $response = $this->json('GET', route('api.v1.wind.show', ['zipCode' => 8910]))
             ->assertStatus(422);
@@ -62,7 +62,7 @@ class WindShowTest extends TestCase
     /**
      * @test
      */
-    public function fails_on_missing_zip_code()
+    public function failsOnMissingZipCode()
     {
         $this->json('GET', route('api.v1.wind.show', ['zipCode' => null]))
             ->assertStatus(404);

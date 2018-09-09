@@ -2,7 +2,6 @@
 
 namespace App\Data;
 
-
 class OpenWeatherMapData implements WeatherDataInterface
 {
     /** @var float */

@@ -2,7 +2,6 @@
 
 namespace App\Services;
 
-
 use App\Contracts\WeatherDataContract;
 use App\Data\OpenWeatherMapData;
 use App\Data\WeatherDataInterface;
